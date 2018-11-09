@@ -1,4 +1,4 @@
-% \documentclass[11pt,a5paper]{article}
+\documentclass[11pt,a5paper]{article}
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -61,6 +61,10 @@
   \vspace*{-0.3em}%
 }
 
+\newcommand{\ALLREP}[1]{%
+	{\fontfamily{ppl}\selectfont {\hskip 0.5em}(Tutto x#1){\hskip 0.5em}}%
+}
+
 \makeatletter
 \renewcommand{\@seccntformat}[1]{%
   \begingroup
@@ -108,7 +112,7 @@
 \linespread{1.25}
 \pagestyle{empty}
 \input{extra/prima-copertina}
-\iftwoside
+\if twoside
 \newgeometry{top=20mm,inner=20mm,outer=10mm,bottom=20mm}
 \else
 \newgeometry{top=20mm,left=15mm,right=15mm,bottom=20mm}
@@ -119,37 +123,42 @@
 \title{Canzoniere di Guerra}
 \title{della}
 \title{Scuola Normale Superiore}
+\begin{center}%
+	{\fontfamily{pag}\selectfont\scshape\Large{(Versione CD)}}%
+\end{center}%
 
 \input{canzoni/Normale_Urra}
-\input{canzoni/Santanna_Merda}
+%\input{canzoni/Santanna_Merda}
 \input{canzoni/Scuola_Normale_Trionfera}
 \input{canzoni/Son_Perdenti_Son_Sfigati}
 \input{canzoni/Nella_Notte_Piu_Nera}
 \input{canzoni/Sono_Gli_Scemi_Del_Santanna}
 \input{canzoni/Lo_Han_Segato_Alla_Scuola_Normal}
-\input{canzoni/Normale_Ole}
+%\input{canzoni/Normale_Ole}
 \input{canzoni/Il_Ponte_Sul_Fiume_Arno}
-\input{canzoni/Coro_Napoletano_Per_Maradona}
+%\input{canzoni/Coro_Napoletano_Per_Maradona}
 \clearpage
 \logofalse
 \input{extra/intermezzo}
 \logotrue
 \input{canzoni/Il_Santannino_Puzza}
-\input{canzoni/Noi_Vogliamo_Tanto_Bene}
-\input{canzoni/Ma_Al_Santanna_No}
+%\input{canzoni/Noi_Vogliamo_Tanto_Bene}
+%\input{canzoni/Ma_Al_Santanna_No}
 \input{canzoni/Il_Sogno_Alla_Normale}
-\input{canzoni/Benvenuti}
-\input{canzoni/San_Francesco}
-\input{canzoni/Siam_Venuti_Fin_Qua}
+%\input{canzoni/Benvenuti}
+%\input{canzoni/San_Francesco}
+%\input{canzoni/Siam_Venuti_Fin_Qua}
 \input{canzoni/Sit_Triumphans_O_Schola_Normalis}
-\input{canzoni/Settimo_Comandamento}
-\input{canzoni/Che_Confusione}
-\input{canzoni/Poveri_Pirla}
-\input{canzoni/Youporn}
-\input{canzoni/Ribadiamo_Un_Po_Il_Concetto}
+%\input{canzoni/Settimo_Comandamento}
+%\input{canzoni/Che_Confusione}
+%\input{canzoni/Poveri_Pirla}
+%\input{canzoni/Youporn}
+%\input{canzoni/Ribadiamo_Un_Po_Il_Concetto}
 \input{canzoni/Priore_Ciao}
-\input{canzoni/Il_Santanna_E}
-\input{canzoni/L_Importante_E_Partecipare}
+%\input{canzoni/Il_Santanna_E}
+%\input{canzoni/L_Importante_E_Partecipare}
+\input{canzoni/LArno_Mormorava}
+\input{canzoni/Il_vero_Normalista}
 \clearpage
 \logofalse
 \newgeometry{top=0mm,bottom=0mm,left=0mm,right=0mm}
