@@ -2,7 +2,7 @@
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
+\usepackage[greek, italian]{babel}
 \usepackage{alltt}
 \usepackage{scrextend}
 \usepackage{geometry}
@@ -21,6 +21,11 @@
 \usepackage{changepage}
 \usepackage{fdsymbol}
 \usepackage[final,kerning=true,spacing=true,tracking=true,activate={true,nocompatibility},stretch=10,shrink=10]{microtype}
+
+\usepackage{tabularx}
+\usepackage{tabto}
+\usepackage{setspace}
+\usepackage{tocloft}
 
 \SetTracking{encoding={*}, shape=sc}{0}
 \SetExtraKerning[unit=space]{encoding=T1}{'={160,280},”={250,0},“={0,100}}
@@ -57,7 +62,7 @@
 
 \newcommand{\RITB}{%
   \vspace*{-0.3em}%
-  {~\hfill{\fontfamily{ppl}\selectfont $\vardiamondsuit${\hskip 0.5em}RIT. (x2){\hskip 0.5em}$\vardiamondsuit$}\hfill~}%
+  {~\hfill{\fontfamily{ppl}\selectfont $\vardiamondsuit${\hskip 0.5em}RIT. x2{\hskip 0.5em}$\vardiamondsuit$}\hfill~}%
   \vspace*{-0.3em}%
 }
 
@@ -127,25 +132,32 @@
 	{\fontfamily{pag}\selectfont\scshape\Large{(Versione CD)}}%
 \end{center}%
 
-\input{canzoni/Normale_Urra}
-%\input{canzoni/Santanna_Merda}
-\input{canzoni/Scuola_Normale_La_Trionfera}
-\input{canzoni/Son_Perdenti_Son_Sfigati}
-\input{canzoni/Nella_Notte_Piu_Nera}
-\input{canzoni/Sono_Gli_Scemi_Del_Santanna}
-\input{canzoni/LHan_Segato_Alla_Normal}
-\input{canzoni/Il_Ponte_Sul_Fiume_Arno}
 \clearpage
-\logofalse
-\input{extra/intermezzo}
-\logotrue
+\input{canzoni/Normale_Urra}
+\input{canzoni/Scuola_Normale_La_Trionfera}
+\vspace{0.6in}
+\input{canzoni/Son_Perdenti_Son_Sfigati}
+\clearpage
+\input{canzoni/Nella_Notte_Piu_Nera}
+\vspace{0.6in}
+\input{canzoni/Sono_Gli_Scemi_Del_Santanna}
+\clearpage
+\input{canzoni/LHan_Segato_Alla_Normal}
+\clearpage
+\input{canzoni/Il_Ponte_Sul_Fiume_Arno}
+\vspace{1.2in}
 \input{canzoni/Il_Santannino_Puzza}
+\clearpage
 \input{canzoni/Ma_Al_Santanna_No}
+\clearpage
 \input{canzoni/Il_Sogno_Alla_Normale}
 \input{canzoni/Sis_Triumphans_O_Schola_Normalis}
 \input{canzoni/Priore_Ciao}
+\clearpage
 \input{canzoni/LArno_Mormorava}
+\clearpage
 \input{canzoni/Santannin}
+\vspace{1in}
 \input{canzoni/Il_vero_Normalista}
 \clearpage
 \logofalse
